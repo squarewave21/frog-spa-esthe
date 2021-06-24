@@ -1,0 +1,54 @@
+.access{
+  @include pc {
+    padding-bottom: 72px;
+  }
+  &-inner {
+    padding-bottom: 88rem;
+    @include inner;
+    @include pc {
+      border: 1px solid #00a400;
+      padding-bottom: 40px;
+    }
+  }
+  &-info {
+    margin: 56rem 40rem 48rem;
+    @include pc {
+      margin: 56px 336px 48px;
+    }
+    &-text {
+      margin-bottom: 16rem;
+      font-size: 18rem;
+      color: #00a400;
+      @include pc {
+        font-size: 18px;
+      }
+    }
+  }
+  &-room-name {
+    
+    color: #fff;
+    font-size: 24px;
+    @include sp {
+      margin-bottom: 16rem;
+    }
+    @include pc {
+      margin: 0 80px 24px;
+    }
+  }
+  &-map {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 75%;
+    position: relative;
+    iframe {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+    }
+    @include pc {
+      margin: 0 80px;
+    }
+  }
+}

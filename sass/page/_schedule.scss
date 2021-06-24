@@ -1,0 +1,141 @@
+.page-schedule {
+  @include sp {
+    padding-bottom: 112rem;
+  }
+  @include pc {
+    padding-bottom: 260px;
+  }
+  &-border {
+    @include inner;
+    @include pc {
+      border: solid 1px #00a400;
+    }
+  }
+  
+  .date-tab {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40rem;
+    width: 100%;
+    @include pc {
+      margin-bottom: 24px;
+      padding: 0 32px;
+    }
+    &-item {
+      position: relative;
+      width: 14%;
+      font-size: 21rem;
+      background-color: #00a400;
+      padding: 16rem;
+      color: #fff;
+      text-align: center;
+      &:hover {
+        color: #ccc;
+      }
+      @include osaka;
+      @include pc {
+        padding: 16px;
+        width: 14%;
+        font-size: 21px;
+      }
+    }
+    &-week {
+      @include sp {
+        display: block;
+      }
+    }
+  }
+  
+  &-title-day {
+    border-bottom: 2px solid #00a400;
+    margin-bottom: 40rem;
+    padding-bottom: 16rem;
+    color: #fff;
+    font-size: 24rem;
+    font-weight: bold;
+    text-align: center;
+    @include pc {
+      margin: 0 32px 40px 32px;
+      padding-bottom: 16px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+}
+
+.page-schedule-therapists .box {
+  display: none;
+}
+
+#day0:checked ~ .page-schedule-therapists .box:nth-of-type(1),
+#day1:checked ~ .page-schedule-therapists .box:nth-of-type(2),
+#day2:checked ~ .page-schedule-therapists .box:nth-of-type(3),
+#day3:checked ~ .page-schedule-therapists .box:nth-of-type(4),
+#day4:checked ~ .page-schedule-therapists .box:nth-of-type(5),
+#day5:checked ~ .page-schedule-therapists .box:nth-of-type(6),
+#day6:checked ~ .page-schedule-therapists .box:nth-of-type(7) {
+  display: block;
+}
+
+.page-schedule .page-title {
+  margin-bottom: 40px;
+}
+
+
+.page-schedule-therapists .therapist-list-wrap {
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include pc {
+    padding: 0 32px;
+  }
+}
+
+.page-schedule .therapist-list-wrap {
+  @include pc {
+
+    &:before {
+      content: "";
+      display: block;
+      width: 23%;
+      order: 1;
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      width: 23%;
+    }
+  }
+}
+
+.page-schedule .therapist-list {
+  margin-bottom: 24rem;
+
+  @include pc {
+    width: 23%;
+    margin-bottom: 24px;
+  }
+}
+
+.page-schedule .oil {
+  word-spacing: 0;
+  font-family: "fot-matisse-pron";
+  text-align: center;
+  font-size: 15px;
+  .item {
+    display: block;
+    background-color: #ff338c;
+    line-height: 30px;
+    &:nth-child(2) {
+      background-color: #6d003f;
+    }
+  }
+  @include sp {
+    .item {
+      font-size: 26rem;
+      padding: 3rem 0;
+      line-height: 32rem;
+    }
+  }
+}

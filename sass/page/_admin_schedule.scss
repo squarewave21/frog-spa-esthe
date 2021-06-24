@@ -1,0 +1,47 @@
+.attendance-bg{
+	background: #000;
+}
+#attmgr_admin_scheduler {
+	width: 1100px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.list_pagenavi {
+	margin-bottom: 4rem;
+	background: #000;
+	color: #fff;
+}
+
+.list_pagenavi .list_datenavi {
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+.list_pagenavi .list_datenavi a {
+	font-size: 24px;
+	color: #fff;
+	padding: 8px 8px;
+}
+
+.attmgr_admin_scheduler tr:first-child th {
+	position: sticky;
+	top: 0;
+	background-color: #00a400;
+	color: #fff;
+	z-index: 100000;
+	padding: 2.4rem 0;
+	font-size: 32rem;
+	@include pc{
+		font-size: 16px;
+		}
+}
+
+form#attmgr_admin_scheduler table.attmgr_admin_scheduler th, form#attmgr_admin_scheduler table.attmgr_admin_scheduler td{
+	padding: 16rem;
+	@include pc{
+			padding: 8px;
+		}
+}
+
+.list_pagenavi .list_datenavi {}

@@ -1,0 +1,322 @@
+.author {
+  color: #fff;
+  background: #1e1e1e;
+  padding-bottom: 40rem;
+
+  @include pc {
+    background: #000;
+  }
+
+}
+
+.author .new:before {
+  width: 210rem;
+  height: 205rem;
+
+  @include pc {
+    width: 144px;
+    height: 128px;
+  }
+}
+
+.author-contentwrap {
+  @include pc {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.author-title {
+  @include osaka;
+  font-size: 28rem;
+  color: #fff;
+  text-align: center;
+  background: #000;
+  padding: 24rem 0;
+
+  @include pc {
+    display: none;
+  }
+}
+
+.author-wrapper {
+  padding-top: 48rem;
+
+  @include pc {
+    border: solid 1px #00a400;
+    padding: 40px 56px;
+
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+  }
+}
+
+.clearfix {
+  &:after {
+    @include clearfix;
+  }
+}
+
+.author-img-wrap {
+  padding: 32rem;
+  border: #00a400 solid 1px;
+  @include inner;
+  position: relative;
+
+  @include pc {
+    float: left;
+    width: 511px;
+    margin-bottom: 24px;
+    padding: 32px 40px;
+  }
+}
+
+.author-img {
+  margin-bottom: 8rem;
+}
+
+.author-thumbnail-wrap {
+  display: flex;
+
+}
+
+.author-info-wrap {
+  color: #fff;
+  @include inner;
+
+  @include pc {
+    float: right;
+    width: 528px;
+  }
+}
+
+.author-title-sp {
+  display: none;
+
+  @include pc {
+    display: block;
+    font-size: 21px;
+    background: #00a400;
+    padding: 8px 0 8px 16px;
+  }
+}
+
+.author-size-wrap {
+  @include matisse;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #00a400;
+  padding-top: 16rem;
+  padding-bottom: 8rem;
+  margin-bottom: 16rem;
+  justify-content: space-between;
+
+  @include pc {
+    margin-bottom: 40px;
+  }
+}
+
+.author-name-tall-wrap {
+  font-size: 32rem;
+
+  @include pc {
+    font-size: 23px;
+  }
+}
+
+.author-name {
+  margin-bottom: 8rem;
+}
+
+.author-option {
+  font-size: 21rem;
+  background: #00a400;
+  padding: 4rem 16rem;
+  text-align: center;
+  @include pc {
+    font-size: 17px;
+  }
+}
+
+.author-description {
+  line-height: 1.75;
+  font-size: 20rem;
+  margin-bottom: 72rem;
+
+  @include pc {
+    font-size: 18px;
+    margin-bottom: 48px;
+  }
+}
+
+.author-schedule {
+  @include osaka;
+  font-size: 25rem;
+  @include inner;
+  margin-bottom: 72rem;
+
+  @include pc {
+    float: left;
+    width: 511px;
+    font-size: 21px;
+    margin-bottom: 48px;
+  }
+}
+
+.author-schedule-title {
+  color: #fff;
+  background: #00a400;
+  padding: 8rem 0;
+  text-align: center;
+
+  @include pc {
+    padding: 12px 0;
+  }
+}
+
+.attend-list-contentwrap {
+  color: #fff;
+  list-style: none;
+
+  @include pc {
+    margin-bottom: 48px;
+  }
+}
+
+.attend-list {
+  display: flex;
+  align-items: center;
+  border-bottom: #00a400 solid 1px;
+}
+
+.cell-date {
+  background: #c8c8c8;
+  text-align: center;
+  padding: 24rem;
+  color: #020000;
+
+  span {
+    margin-left: 4rem;
+  }
+
+  @include pc {
+    padding: 16px 24px;
+  }
+}
+
+.cell-hour {
+  padding-left: 56rem;
+
+  @include pc {
+    padding: 0 24px;
+  }
+  .shop {
+    margin-left: 1em;
+  }
+}
+
+.author-twitter {
+  margin-bottom: 72rem;
+
+  @include pc {
+    float: right;
+    width: 528px;
+
+  }
+}
+.twitter-inner{
+	@include sp {
+		width: 90%;
+		margin: 0 auto;
+		}
+}
+.twitter-link {
+  @include pc {
+    font-size: 17px;
+  }
+}
+
+.gototherapists-wrap {
+  background: #3a393b;
+  padding: 8rem;
+  width: 72%;
+  margin: 0 auto;
+
+  @include pc {
+    display: none;
+  }
+}
+
+
+.gototherapists {
+  @include ryumin;
+  font-size: 18rem;
+  text-align: center;
+  padding: 8rem 0;
+  border: solid 1px #fff;
+
+  a {
+    color: #fff;
+  }
+
+  @include pc {
+    display: none;
+  }
+}
+
+.gototherapists-wrap-pc {
+  @include sp {
+    display: none;
+  }
+
+  background: #3a393b;
+  padding: 8rem;
+  margin: 0 auto;
+}
+
+
+.gototherapists-pc {
+  @include sp {
+    display: none;
+  }
+
+  @include ryumin;
+  font-size: 18px;
+  text-align: center;
+  padding: 8px 0;
+  border: solid 1px #fff;
+
+  a {
+    color: #fff;
+  }
+}
+
+.options {
+  width: 50%;
+  .oil {
+    display: flex;
+    flex-wrap: wrap;
+    word-spacing: 0;
+    font-family: "fot-matisse-pron";
+    text-align: center;
+    .item {
+      font-size: 17px;
+      width: 100%;
+      background-color: #ff338c;
+      line-height: 34px;
+      margin-bottom: 8px;
+      &:nth-of-type(2) {
+        background-color: #6d003f;
+      }
+    }
+    @include sp {
+      .item {
+        font-size: 18rem;
+        line-height: 32rem;
+      }
+    }
+  }
+}

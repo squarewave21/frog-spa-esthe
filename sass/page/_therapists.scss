@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+.page-title {
+  width: 100%;
+  background: #1e1e1e;
+  padding: 24rem 0;
+  text-align: center;
+  font-size: 28rem;
+  color: #fff;
+
+  @include sp {
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    margin-bottom: 40rem;
+  }
+
+  @include pc {
+    font-size: 21px;
+    @include osaka;
+    background: #00a400;
+    text-align: center;
+    padding: 8px 0;
+    font-weight: 400;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+}
+
+.page-therapists {
+  color: #fff;
+  padding-bottom: 106rem;
+
+  @include pc {
+    padding-bottom: 260px;
+
+  }
+}
+
+.therapists-listwrap {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include inner;
+
+  @include pc {
+    padding: 40px 24px 80px;
+    justify-content: space-between;
+    border: solid #00a400 1px;
+  }
+
+  @include sp {
+    align-items: flex-start;
+  }
+}
+
+.therapist-page-list {
+  border: solid #00a400 1px;
+  width: 48%;
+  position: relative;
+  margin-bottom: 24px;
+
+  @include sp {
+    margin-bottom: 24rem;
+  }
+
+
+  @include pc {
+    width: 49.4%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px 10px;
+    justify-content: space-around;
+    border: solid 1px #00a400;
+  }
+}
+
+.therapist-img-wrap {
+  @include sp {
+    padding: 20rem;
+  }
+
+  @include pc {
+    width: 42%;
+  }
+}
+
+.option-fee-pc {
+  @include sp {
+    display: none;
+  }
+
+  background: #00a400;
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  @include matisse;
+  padding: 4px 0;
+}
+
+.therapist-info-flexwrap {
+  width: 100%;
+  text-align: center;
+
+  @include sp {
+    font-size: 26rem;
+  }
+
+  @include pc {
+    width: 49%;
+  }
+}
+
+.therapist-infowrap {
+  @include pc {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.therapist-contentwrap {
+  @include matisse;
+
+  @include sp {
+    margin-bottom: 24rem;
+  }
+
+  @include pc {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+}
+
+.therapist-tall {
+  span {
+    margin-left: 4rem;
+
+    @include pc {
+      margin-left: 4px;
+    }
+  }
+}
+
+.therapist-name {
+  @include sp {
+    margin-bottom: 8rem;
+  }
+
+  @include pc {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+
+}
+
+.therapist-more {
+  background: #3a393b;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include sp {
+    display: none;
+  }
+
+  @include pc {
+    font-size: 15px;
+    margin-bottom: 12px;
+    border-radius: 3px;
+    @include osaka;
+  }
+
+  a {
+    color: #fff;
+
+    @include pc {
+      padding: 8px 4px;
+      display: block;
+      padding: 0 8px;
+    }
+  }
+}
+
+.therapist-text {
+  @include sp {
+    display: none;
+  }
+
+  @include pc {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1.8;
+    border-top: solid 2px #00a400;
+    padding: 16px 14px 0;
+    text-align: left;
+  }
+
+}
+
+.option-fee-sp {
+  background: #00a400;
+  color: #fff;
+  @include matisse;
+  padding: 6rem 0 3rem 0;
+
+  font-size: 26rem;
+
+  @include pc {
+    display: none;
+  }
+}
+
+.therapist-page-option-pc {
+  @include sp {
+    display: none;
+  }
+
+  @include pc {
+    display: block;
+  }
+}
+
+.therapist-page-option-sp {
+  @include pc {
+    display: none;
+  }
+
+  @include sp {
+    display: block;
+  }
+}
+
+.panel-nostaff {
+  color: #fff;
+  font-size: 24rem;
+  margin-top: 24rem;
+
+  @include pc {
+    font-size: 16px;
+  }
+}
+
+.page-therapists {
+  .oil {
+    word-spacing: 0;
+    font-family: "fot-matisse-pron";
+    text-align: center;
+    font-size: 17px;
+    line-height: 24px;
+
+    .item {
+      margin-top: 4px;
+      display: block;
+      background-color: #ff338c;
+      &:nth-child(2) {
+        background-color: #6d003f;
+      }
+
+    }
+
+    &.sp {
+      display: none;
+    }
+
+    @include sp {
+      font-size: 26rem;
+      line-height: 32rem;
+
+      .item {
+        margin-top: 0;
+      }
+
+      
+      &.sp {
+        display: block;
+      }
+
+      &.pc {
+        display: none;
+      }
+    }
+  }
+}

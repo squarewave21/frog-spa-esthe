@@ -1,0 +1,299 @@
+@charset "UTF-8";
+
+.header {
+	padding: 20rem 0;
+	background: #000;
+	
+	z-index: 1000;
+
+	@include pc {
+		padding: 20px 0;
+	}
+}
+
+.header-innerwrap {
+	@include pc {
+		border-bottom: solid #e4007f 1px;
+		transform: translateY(1px);
+		padding-bottom: 30px;
+
+	}
+}
+
+.header-inner {
+	display: flex;
+	align-items: center;
+	@include inner;
+	justify-content: space-between;
+
+	@include pc {
+		justify-content: space-around;
+	}
+}
+
+
+.header-logo-wrap {
+	display: flex;
+	align-items: flex-end;
+
+	@include pc {
+		flex-direction: column;
+		align-items: center;
+	}
+
+}
+
+.header-logo {
+
+	width: 56.7%;
+
+	@include pc {
+		margin-bottom: 8px;
+		width: 382px;
+	}
+
+	a {
+		display: inline-block;
+	}
+
+	&-text {
+		@include osaka;
+		color: #00a400;
+		font-size: 26rem;
+		margin-left: 24rem;
+		margin-bottom: 24rem;
+
+		@include pc {
+			font-size: 25px;
+			margin-left: 0;
+			margin-bottom: 0;
+		}
+
+	}
+}
+
+.header-logo-text-wrap {
+	display: flex;
+}
+
+.header-sns-lineid {
+	@include sp {
+		display: none;
+	}
+
+	background: #00a400;
+	border-radius: 4px;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-left: 8px;
+
+	span {
+		&:before {
+			content: '';
+			display: inline-block;
+			background-image: url(../images/arrow-right.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 10px;
+			height: 12px;
+			margin: 0 4px;
+		}
+	}
+
+	a {
+		padding: 0 24px;
+		color: #fff;
+	}
+}
+
+.header-sns-wrap {
+	@include osaka;
+
+	@include sp {
+		display: none;
+	}
+}
+
+.header-sns-listwrap {
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 176px;
+
+
+	a {
+		color: #fff;
+	}
+}
+
+.header-sns-list {
+	font-size: 9px;
+	width: 37px;
+	display: flex;
+	flex-direction: column;
+
+	a {
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+
+		span {
+			margin-top: 10px;
+		}
+	}
+}
+
+
+.header-pc-shopinfo {
+	@include sp {
+		display: none;
+	}
+
+	@include osaka;
+	color: #00a400;
+
+	&-time {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	&-tel {
+		font-size: 20px;
+		text-align: right;
+		margin-bottom: 20px;
+
+		span {
+			font-size: 33px;
+		}
+	}
+
+}
+
+.business-hours {
+	color: #fff;
+	font-size: 24rem;
+	@include osaka;
+	text-align: center;
+	background: #00a400;
+	padding: 10rem 0;
+
+	@include pc {
+		display: none;
+	}
+}
+
+.header-credit {
+	@include sp {
+		display: none;
+	}
+
+	a {
+		display: block;
+	}
+}
+
+.sp-credit {
+	@include sp {
+		padding: 16rem 24rem;
+	}
+
+	@include pc {
+		display: none;
+	}
+}
+
+.pc-header-menu {
+	@include sp {
+		display: none;
+	}
+
+	@include inner;
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.pc-header-menu-list {
+	font-size: 12px;
+	@include myriad;
+
+	span {
+		font-size: 15px;
+		@include osaka;
+		margin-bottom: 8px;
+	}
+
+	a {
+		color: #fff;
+
+		@include pc {
+			padding: 30px 16px;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+}
+
+.pc-header-menu-list a {
+	@include pc {
+		position: relative;
+		transition: .3s;
+	}
+}
+
+.pc-header-menu-list a::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	width: 0;
+	height: 1px;
+	background-color: #fff;
+	transition: .3s;
+}
+
+.pc-header-menu-list a:hover::after {
+	@include pc {
+		width: 100%;
+	}
+}
+
+.pc-global-navwrap {
+	width: 100%;
+	background: #000;
+
+}
+
+#global-nav {
+	z-index: 1000;
+
+}
+
+#global-nav.m_fixed {
+	left: 0;
+	position: fixed;
+	top: 0;
+}
+
+.slider {
+	z-index: 1;
+	padding: 0 0 48rem 0;
+
+	@include pc {
+		z-index: 10;
+		padding: 24px 0 64px 0;
+
+	}
+}
+
+.pc-bgwrap {
+	@include pc {
+		background: #000;
+	}
+}

@@ -1,0 +1,322 @@
+.recruit {
+  background: #fff;
+
+  &-wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &-title {
+    padding: 32rem 0;
+    background: #b0904a;
+    font-family: $font_osaka;
+    color: #fff;
+    text-align: center;
+
+    @include pc {
+      font-size: 21px;
+      padding: 8px 0;
+    }
+
+    @include sp {
+      font-size: 32rem;
+    }
+  }
+
+  // メインビジュアル
+  &-mainvisual {
+    background: url(../images/page-recruit-image.jpg) no-repeat top left / 100% auto;
+    color: #b0904a;
+
+    @include pc {
+      padding: 64px 32px 240px;
+    }
+
+    @include sp {
+      padding: 36rem 24rem 96rem;
+    }
+
+    &-title {
+      display: flex;
+      flex-direction: column;
+      font-family: $font_ryumin;
+      font-weight: 400;
+
+      @include pc {
+        margin-bottom: 40px;
+        width: 448px;
+      }
+
+      @include sp {
+        margin-bottom: 40rem;
+        width: 44%;
+      }
+
+      .top {
+        border-bottom: 1px solid #b0904a;
+        @include bigcaslon;
+
+        @include pc {
+          font-size: 85px;
+          margin-bottom: 8px;
+        }
+
+        @include sp {
+          font-size: 56rem;
+        }
+      }
+
+      .bottom {
+        font-size: 44px;
+        line-height: 1.2;
+
+        @include sp {
+          font-size: 26rem;
+        }
+      }
+    }
+
+    &-salary {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 80px;
+      width: 448px;
+      font-family: $font_ryumin;
+
+      @include sp {
+        margin-bottom: 64rem;
+        width: 70%;
+      }
+
+      dt {
+        margin-bottom: 8px;
+        padding: 8px;
+        background-color: #b0904a;
+        color: #fff;
+
+        @include pc {
+          font-size: 24px;
+        }
+
+        @include sp {
+          font-size: 24rem;
+        }
+      }
+
+      dd {
+        margin-bottom: 16px;
+        font-size: 36px;
+        line-height: 1.4;
+        letter-spacing: 0.06em;
+
+        @include sp {
+          font-size: 40rem;
+        }
+      }
+    }
+
+    &-guarantee {
+      display: inline-block;
+      padding: 16px;
+      border: 1px solid #b0904a;
+      color: #b0904a;
+      font-size: 26px;
+
+      @include sp {
+        padding: 16rem;
+        font-size: 28rem;
+      }
+
+      span {
+        display: block;
+        margin-top: 8px;
+        font-size: 18px;
+        text-align: center;
+
+        @include sp {
+          font-size: 24rem;
+        }
+      }
+    }
+  }
+
+  // 募集要項
+  &-content {
+    &-wrap {
+      display: flex;
+      padding: 64px 20px;
+      border-bottom: 1px solid #b0904a;
+      font-size: 24px;
+      line-height: 1.6;
+
+      @include sp {
+        flex-direction: column;
+        padding: 40rem 0 40rem 44rem;
+      }
+
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+
+    &-title {
+      width: 380px;
+      color: #b0904a;
+      font-weight: bold;
+
+      @include sp {
+        width: 100%;
+        margin-bottom: 32rem;
+      }
+    }
+
+    &-text {
+      width: calc(100% - 380px);
+
+      @include sp {
+        width: 100%;
+        font-size: 24rem;
+      }
+
+      .paragraph {
+        margin-bottom: 2em;
+      }
+    }
+  }
+}
+
+
+.page-recruit-header-wrap {
+  @include pc {
+    background: #e9eaea;
+    padding: 56px 0;
+  }
+}
+
+.page-recruit-header {
+  color: #b0904a;
+
+  @include pc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1077px;
+    margin: 0 auto;
+  }
+}
+
+.page-recruit-infowrap {
+  margin-bottom: 48rem;
+  width: 90.5%;
+  margin: 0 auto;
+
+  @include pc {
+    width: 683px;
+    margin: 0;
+  }
+}
+
+.page-recruit-logo {
+  font-size: 46rem;
+  @include bigcaslon;
+  border-bottom: solid 1px #b0904a;
+  padding-bottom: 8rem;
+
+  @include pc {
+    font-size: 46px;
+  }
+}
+
+.page-recruit-tel {
+  padding: 8rem 0;
+  @include osaka;
+  font-size: 27rem;
+  margin-bottom: 28rem;
+  display: flex;
+  align-items: flex-end;
+
+  @include pc {
+    font-size: 26px;
+    padding: 16px 0 0 0;
+    margin-bottom: 24px;
+  }
+
+  .page-tel-hours {
+    font-size: 20rem;
+    background: #b0904a;
+    padding: 8rem;
+    margin-right: 16rem;
+    color: #fff;
+
+    @include pc {
+      font-size: 20px;
+      margin-right: 16px;
+    }
+  }
+
+  .page-telnum {
+    font-size: 43rem;
+
+    a {
+      color: #b0904a;
+    }
+
+    @include pc {
+      font-size: 43px;
+    }
+  }
+}
+
+.page-recruit-info-text {
+  font-size: 27rem;
+  @include osaka;
+  margin-bottom: 48rem;
+
+  @include pc {
+    font-size: 27px;
+    margin-bottom: 0;
+  }
+}
+
+.page-recruit-line {
+  width: 410rem;
+  margin: 0 auto;
+  padding-bottom: 56rem;
+
+  @include pc {
+    display: none;
+  }
+}
+
+.page-recruit-line-wrap {
+  display: none;
+
+  @include pc {
+    display: block;
+
+    img {
+      width: 153px;
+      display: block;
+    }
+  }
+}
+
+.page-recruit-line-text {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  @include osaka;
+  color: #fff;
+  background: #00a400;
+  justify-content: center;
+  align-content: center;
+  padding: 4px 8px;
+  border-radius: 4px;
+
+  img {
+    width: 9px;
+    margin: 0 4px;
+  }
+}

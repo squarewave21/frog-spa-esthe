@@ -1,0 +1,530 @@
+@charset "UTF-8";
+
+.mainvisual {
+  background: #000;
+}
+
+.main-img-innerwrap {
+  @include pc {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 48px;
+
+  }
+}
+
+.mainvisual-menu {
+  display: flex;
+  width: 100%;
+
+  @include sp {
+    margin-top: 10rem;
+  }
+
+  @include pc {
+    display: none;
+  }
+
+  &-list {
+    @include osaka;
+    font-size: 26rem;
+    color: #fff;
+    text-align: center;
+    background: #006d00;
+    width: 50%;
+    line-height: 1.4;
+
+    a {
+      color: #fff;
+      padding: 20rem 0;
+      display: inline-block;
+      width: 100%;
+
+    }
+
+    span {
+      font-size: 22rem;
+      @include myriad;
+      display: block;
+    }
+  }
+}
+
+.mainvisual-menu-list:last-of-type {
+  background: #00a400;
+}
+
+.main-inner {
+  @include inner;
+}
+
+.top-therapists-bg {
+  background: #000;
+  margin: 0 calc(50% - 50vw);
+  padding: 0 calc(50vw - 50%);
+  width: 100vw;
+
+  @include pc {
+    padding-bottom: 72px;
+  }
+
+}
+
+.section-bg {
+  background: #000;
+
+  @include pc {
+    padding-top: 32px;
+  }
+}
+
+.top-therapists-container .therapist-list-wrap {
+  @include sp {
+    justify-content: space-between;
+  }
+}
+
+.top-therapists-container .therapist-list {
+  margin-bottom: 24rem;
+}
+
+.therapists-container {
+  @include pc {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.therapists-wrap {
+  background: #000;
+  padding-bottom: 72rem;
+
+  @include pc {
+    width: 71%;
+    padding-bottom: 0;
+  }
+}
+
+.therapists-title {
+  font-size: 28rem;
+  @include osaka;
+  text-align: center;
+  color: #fff;
+  background: #1e1e1e;
+  padding: 32rem 0;
+
+  @include sp {
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    margin-bottom: 24rem;
+  }
+
+  @include pc {
+    font-size: 21px;
+    color: #fff;
+    background: #00a400;
+    padding: 8px 0;
+    margin-bottom: 30px;
+  }
+}
+
+.therapists-wrap-inner {
+  @include sp {
+    width: 88.8%;
+    margin: 0 auto;
+  }
+}
+
+.therapist-list-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  @include pc {
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    width: 30%;
+  }
+}
+
+.therapist-list {
+  width: 48.5%;
+  border: #00a400 solid 1px;
+  @include matisse;
+  text-align: center;
+  color: #fff;
+  position: relative;
+
+  @include sp {
+    font-size: 26rem;
+  }
+
+  @include pc {
+    width: 32.3%;
+    padding-top: 16px;
+    margin-bottom: 20px;
+  }
+
+  &-image {
+    width: 88.3%;
+    margin: 18rem auto;
+
+    @include pc {
+      margin: 0 auto;
+      margin-bottom: 16px;
+    }
+  }
+
+  &-name {
+    margin-bottom: 4rem;
+
+    @include pc {
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+  }
+
+  &-tall {
+    margin-bottom: 20rem;
+
+    @include pc {
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &-worktime {
+    background: #1e1e1e;
+    padding: 8rem 0;
+    line-height: 1.6;
+    @include pc {
+      font-size: 15px;
+      padding: 8px 0;
+    }
+  }
+
+  &-option {
+    background-color: #00a400;
+    padding: 7rem 0 6rem 0;
+    transform: translateY(1px);
+
+    @include pc {
+      font-size: 15px;
+      padding: 7px 0 6px 0;
+    }
+  }
+}
+
+.new {
+  &:before {
+    content: '';
+    font-size: 24rem;
+    width: 106rem;
+    height: 95rem;
+    background-image: url(../images/new.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transform: translateY(-1px);
+
+    @include pc {
+      width: 89px;
+      height: 80px;
+    }
+  }
+
+}
+
+.therapist-link {
+  @include sp {
+    display: none;
+  }
+
+  border-bottom: solid 1px #fff;
+  display: inline-block;
+  font-size: 11px;
+
+  a {
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  span {
+    margin-left: 8px;
+  }
+}
+
+.twitter {
+  background: #000;
+  padding: 0 0 130rem 0;
+
+  @include pc {
+    width: 27%;
+    padding: 0;
+  }
+}
+
+.twitter-title {
+  background: #0093dd;
+  text-align: center;
+  padding: 10rem 0;
+
+  img {
+    width: 29%;
+  }
+
+  @include sp {
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+    margin-bottom: 36rem;
+  }
+
+  @include pc {
+    padding: 8px 0;
+    margin-bottom: 30px;
+  }
+}
+
+.twitter-inner {
+
+  @include pc {
+    width: 100%;
+  }
+}
+
+.twitter-timeline {
+  display: block;
+
+  @include pc {
+    display: none;
+  }
+}
+
+
+.twitter-wrap {
+  overflow: hidden;
+}
+
+.twitter-wrap iframe {
+  /* 20pxの部分は埋め込んだタイムラインの左右に必要な余白の総計を記載 */
+  width: calc(100vw - 20px) !important;
+}
+
+
+
+
+
+
+.twitter-link {
+  @include osaka;
+  font-size: 19rem;
+  border-bottom: solid 1px #fff;
+  display: inline-block;
+  margin-top: 48rem;
+
+  span {
+    margin-left: 8px;
+  }
+
+  @include pc {
+    font-size: 11px;
+    margin-top: 18px;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 8px 0;
+  }
+}
+
+.about {
+  text-align: center;
+  padding: 90rem 0 0;
+  background: #fff;
+  color: #000;
+  padding: 70rem 0;
+
+  @include sp {
+    padding: 72px 0 0;
+  }
+
+  &-title {
+    font-size: 41rem;
+    border-bottom: #b0904a solid 1px;
+    display: inline-block;
+    padding: 0 20rem;
+    color: #b0904a;
+    @include ryumin;
+    margin-bottom: 10rem;
+
+    @include pc {
+      font-size: 31px;
+    }
+
+    span {
+      font-size: 60rem;
+      @include bigcaslon;
+
+      @include pc {
+        font-size: 48px;
+      }
+    }
+
+    &-text {
+      font-size: 37rem;
+      line-height: 1.4;
+      margin-bottom: 100rem;
+      @include ryumin;
+      color: #b0904a;
+
+      @include pc {
+        font-size: 29px;
+        margin-bottom: 96px;
+      }
+    }
+  }
+}
+
+.about-contentwrap {
+  @include pc {
+    display: flex;
+  }
+}
+
+.about-content-flexwrap {
+  width: 676px;
+  margin-bottom: 168px;
+
+  @include sp {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+.about-content {
+  margin-bottom: 66rem;
+
+  &:last-of-type {
+    margin-bottom: 0;
+
+    @include sp {
+      margin-bottom: 48rem;
+    }
+  }
+
+  @include pc {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+  }
+
+  &-title {
+    font-size: 35rem;
+    @include ryumin;
+    color: #b0904a;
+    margin-bottom: 25rem;
+    display: flex;
+    align-items: center;
+    @include ryumin;
+
+    @include pc {
+      margin-bottom: 12px;
+    }
+
+    span {
+      width: 7.7%;
+      display: inline-block;
+      margin-right: 10rem;
+    }
+
+    @include pc {
+      font-size: 29px;
+    }
+  }
+
+  &-text {
+    font-size: 21rem;
+    line-height: 1.4;
+    margin-bottom: 25rem;
+    text-align: left;
+
+    @include pc {
+      font-size: 12px;
+      margin-bottom: 0;
+      margin-left: 76px;
+    }
+  }
+}
+
+.about-content-text1 {
+  margin-bottom: 40rem;
+
+  @include pc {
+    margin-bottom: 8px;
+  }
+}
+
+.about-image-wrap {
+
+  @include pc {
+    display: none;
+  }
+}
+
+.about-image {
+  width: 247px;
+
+  @include sp {
+    width: 100%;
+  }
+}
+
+
+.pcabout-img-wrap {
+  @include sp {
+    display: none;
+  }
+
+  @include pc {
+    display: block;
+  }
+}
+
+.top-schedule-therapist-wrap .oil {
+  word-spacing: 0;
+  font-family: "fot-matisse-pron";
+  text-align: center;
+  font-size: 15px;
+  line-height: 32px;
+
+  .item {
+    display: block;
+    background-color: #ff338c;
+
+    &:nth-child(2) {
+      background-color: #6d003f;
+    }
+  }
+
+  @include sp {
+    font-size: 26rem;
+    line-height: 32rem;
+
+    .item {
+      padding: 3rem 0;
+    }
+  }
+}

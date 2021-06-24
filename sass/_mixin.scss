@@ -1,0 +1,98 @@
+/* Scss Document */
+@mixin pc {
+  @media screen and (min-width: ($breakpoint-pc)) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (min-width: ($breakpoint-md)) and (max-width: ($breakpoint-ml)) {
+    @content;
+
+  }
+}
+
+@mixin sp {
+  @media screen and (max-width: ($breakpoint-sp)) {
+    @content;
+  }
+}
+
+@mixin inner {
+  width: 88%;
+  margin: 0 auto;
+  max-width: 100%;
+  @include pc {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@mixin clearfix {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@mixin inner {
+  width: 88.8%;
+  margin: 0 auto;
+
+  @include pc {
+    width: 1200px;
+  }
+}
+
+
+@keyframes tabAnim {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@mixin matisse {
+  font-family: fot-matisse-pron, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin osaka {
+  font-family: 'Osaka', sans-serif;
+}
+
+$font_osaka: 'Osaka', sans-serif;
+$font_ryumin: a-otf-ryumin-pr6n, serif;
+
+@mixin myriad {
+  font-family: myriad-pro, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin ryumin {
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin bigcaslon {
+  font-family: 'bigcaslon';
+}
+
+@function vw($width, $px) {
+
+  @return $px / $width * 100vw;
+}

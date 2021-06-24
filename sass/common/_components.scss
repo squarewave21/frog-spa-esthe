@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+//ハンバーガーメニュー
+.toggle {
+	display: none;
+	right: 13rem;
+	cursor: pointer;
+	z-index: 3;
+	position: relative;
+	z-index: 20000;
+	width: 64px;
+	height: 40rem;
+
+	@include sp {
+		display: block;
+	}
+}
+
+.toggle span {
+	display: block;
+	position: absolute;
+	width: 100%;
+	border-bottom: solid 1px #fff;
+	transition: .35s ease-in-out;
+}
+
+.toggle span:nth-child(1) {
+	top: 4rem;
+}
+
+.toggle span:nth-child(2) {
+	top: 20rem;
+}
+
+.toggle span:nth-child(3) {
+	top: 36rem;
+
+}
+
+.toggle.active span:nth-child(1) {
+	transform: rotate(-45deg);
+	top: 10rem;
+	//left: .9rem;
+}
+
+.toggle.active span:nth-child(2),
+.toggle.active span:nth-child(3) {
+	transform: rotate(45deg);
+	top: 10rem;
+}
+
+
+.global-nav {
+	@include sp {
+		display: block;
+	}
+
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	transform: translateY(-100%);
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0.9);
+	transition: 0.8s ease;
+	padding: 40rem 0;
+	height: auto;
+	z-index: 10000;
+}
+
+.global-nav.active {
+	transform: translateY(0%);
+	height: 100%;
+	//opacity: 1;
+}
+
+.global-nav ul {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.global-nav.active ul {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.global-nav .nav-li {
+	width: 100%;
+	list-style-type: none;
+	border-bottom: 1px solid #00a400;
+	font-size: 40rem;
+	text-align: center;
+
+	@include md {
+		font-size: 32rem;
+	}
+
+	span {
+		display: block;
+		margin-top: 16rem;
+		font-size: 20rem;
+
+		@include md {
+			font-size: 16rem;
+		}
+	}
+}
+
+.global-nav .nav-li a {
+	display: block;
+	color: #fff;
+	padding: 24rem;
+
+	@include md {
+		padding: 24rem;
+	}
+}
+
+
+#global-nav.m_fixed {
+	left: 0;
+	position: fixed;
+	top: 0;
+}

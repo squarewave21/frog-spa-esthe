@@ -1,0 +1,172 @@
+.oil-variety {
+  .section-title {
+    line-height: 40px;
+    background-color: #57b4b5;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+  }
+  .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .mainvisual {
+    margin-bottom: 32px;
+    background-color: #fff;
+    .main-image {
+      display: block;
+      width: 1200px;
+      margin: 0 auto;
+    }
+    @include sp {
+      .main-image {
+        width: 100%;
+      }
+    }
+  }
+  
+  .oil1 {
+    @include ryumin;
+    color: #5787b5;
+    //font-weight: 300;
+    padding: 0 48px 72px;
+    .title {
+      display: flex;
+      align-items: center;
+      font-size: 40px;
+      font-weight: 100;
+      margin-bottom: 60px;
+      &::before {
+        content: "";
+        display: block;
+        margin-right: 0.2em;
+        width: 8px;
+        height: 40px;
+        background-color: #5787b5;
+      }
+    }
+    .flex-col {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 48px;
+    }
+    .figure {
+      position: relative;
+      .image {
+        width: auto;
+        height: 400px;
+      }
+      .caption {
+        position: absolute;
+        top: -3em;
+        right: 0;
+        font-size: 24px;
+        line-height: 1.4;
+        text-align: right;
+      }
+    }
+    .text {
+      font-size: 24px;
+      letter-spacing: 0.1em;
+      line-height: 1.4;
+    }
+    .description {
+      margin-bottom: 112px;
+      font-size: 24px;
+      letter-spacing: 0.04em;
+      line-height: 1.4;
+    }
+    .staff-message-label {
+      position: absolute;
+      top: -46px;
+      right: 4%;
+      padding: 0 20px;
+      border-radius: 10px 10px 0 0;
+      background-color: #2d6c9b;
+      color: #fff;
+      font-size: 22px;
+      line-height: 46px;
+    }
+    .staff-message {
+      position: relative;
+      padding: 24px 64px;
+      border-radius: 14px;
+      background-color: #5787b5;
+      color: #fff;
+      font-size: 26px;
+      line-height: 1.4;
+    }
+    @include sp {
+      padding: 0 32rem;
+      .title {
+        font-size: 44rem;
+        margin-bottom: 40rem;
+      }
+      .flex-col {
+        flex-direction: column;
+      }
+      .figure {
+        order: -1;
+        margin-bottom: 80rem;
+        .caption {
+          position: static;
+          font-size: 24rem;
+          text-align: center;
+          br {
+            display: none;
+          }
+        }
+      }
+      .text {
+        font-size: 32rem;
+      }
+      .description {
+        font-size: 32rem;
+        margin-bottom: 160rem;
+      }
+      .staff-message {
+        font-size: 32rem;
+        padding: 32rem 48rem;
+      }
+      .staff-message-label {
+        font-size: 32rem;
+        line-height: 64rem;
+        top: -63rem;
+      }
+    }
+  }
+  
+  .oil2 {
+    @extend .oil1;
+    background-color: #fbfaee;
+    padding-top: 88px;
+    padding-bottom: 88px;
+    color: #489988;
+    .flex-col {
+      margin-bottom: 0;
+    }
+    .title::before {
+      background-color: #489988;
+    }
+    .text {
+      margin-bottom: 112px;
+    }
+    .staff-message {
+      background-color: #489988;
+    }
+    .staff-message-label {
+      background-color: #36797d;
+    }
+    @include sp {
+      padding-top: 128rem;
+      padding-bottom: 128rem;
+      .text {
+        margin-bottom: 96rem;
+      }
+      .description br {
+        display: none;
+      }
+    }
+  }
+}
